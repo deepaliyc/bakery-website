@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flour & Ember Bakery</title>
+    <meta
+      name="description"
+      content="Flour & Ember Bakery serves fresh pastries, sourdough, cakes, and coffee for pickup, celebrations, and everyday treats."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Flour and Ember Bakery home">
+        <span class="brand-mark">F&E</span>
+        <span>Flour & Ember</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#menu">Menu</a>
+        <a href="#specials">Specials</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <a class="header-action" href="#order">Order</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/bakery-hero.png"
+          alt="Fresh pastries, sourdough, and berry tartlets on a bakery counter"
+        >
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Small-batch bakery • open daily</p>
+          <h1 id="hero-title">Fresh bread, pastries, and cakes made before sunrise.</h1>
+          <p class="hero-copy">
+            Stop by for buttery croissants, naturally leavened sourdough, celebration cakes,
+            and coffee poured with a little morning kindness.
+          </p>
+          <div class="hero-actions" aria-label="Bakery actions">
+            <a class="button primary" href="#order">Order pickup</a>
+            <a class="button secondary" href="#menu">View menu</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-info" aria-label="Bakery highlights">
+        <div>
+          <span>Today</span>
+          <strong>7:00 AM - 4:00 PM</strong>
+        </div>
+        <div>
+          <span>Signature</span>
+          <strong>Honey Butter Croissant</strong>
+        </div>
+        <div>
+          <span>Custom Cakes</span>
+          <strong>48-hour preorder</strong>
+        </div>
+      </section>
+
+      <section class="section intro" aria-labelledby="intro-title">
+        <div>
+          <p class="eyebrow">Baked close to home</p>
+          <h2 id="intro-title">A neighborhood bakery with a proper oven schedule.</h2>
+        </div>
+        <p>
+          We bake in small rounds throughout the morning, using seasonal fruit, real butter,
+          stone-milled flour, and slow-fermented doughs. Come early for the first tray or reserve
+          your box for a calmer kind of morning.
+        </p>
+      </section>
+
+      <section class="section menu-section" id="menu" aria-labelledby="menu-title">
+        <div class="section-heading">
+          <p class="eyebrow">Daily favorites</p>
+          <h2 id="menu-title">What we bake</h2>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="menu-icon" aria-hidden="true">01</div>
+            <h3>Morning Pastries</h3>
+            <p>Croissants, kouign-amann, morning buns, pain au chocolat, and fruit danishes.</p>
+            <span>From $4</span>
+          </article>
+          <article class="menu-card">
+            <div class="menu-icon" aria-hidden="true">02</div>
+            <h3>Sourdough Loaves</h3>
+            <p>Country, seeded rye, olive rosemary, and weekly grain specials with deep crust.</p>
+            <span>From $8</span>
+          </article>
+          <article class="menu-card">
+            <div class="menu-icon" aria-hidden="true">03</div>
+            <h3>Cakes & Tarts</h3>
+            <p>Layer cakes, berry tartlets, lemon cream tarts, and celebration bakes by preorder.</p>
+            <span>From $24</span>
+          </article>
+          <article class="menu-card">
+            <div class="menu-icon" aria-hidden="true">04</div>
+            <h3>Coffee Bar</h3>
+            <p>Espresso, drip coffee, cold brew, tea, and seasonal lattes for the walk home.</p>
+            <span>From $3</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="specials" id="specials" aria-labelledby="specials-title">
+        <div class="special-copy">
+          <p class="eyebrow">This week</p>
+          <h2 id="specials-title">Strawberry pistachio tartlets are on the counter.</h2>
+          <p>
+            Made with vanilla bean cream, roasted pistachio, and bright spring berries.
+            Available until sold out each day.
+          </p>
+        </div>
+        <div class="special-list" aria-label="Weekly specials">
+          <div>
+            <span>Mon-Wed</span>
+            <strong>Olive rosemary sourdough</strong>
+          </div>
+          <div>
+            <span>Thu-Fri</span>
+            <strong>Chocolate hazelnut babka</strong>
+          </div>
+          <div>
+            <span>Weekend</span>
+            <strong>Peach hand pies</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section order-section" id="order" aria-labelledby="order-title">
+        <div class="section-heading">
+          <p class="eyebrow">Reserve ahead</p>
+          <h2 id="order-title">Pickup boxes, cakes, and bread holds.</h2>
+        </div>
+        <div class="order-panel">
+          <div>
+            <h3>Order window</h3>
+            <p>
+              Same-day pastry boxes are available until 10:30 AM. Cakes and large bread orders
+              need 48 hours of notice.
+            </p>
+          </div>
+          <form class="order-form" aria-label="Order inquiry form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name">
+            </label>
+            <label>
+              What can we bake?
+              <select name="order-type">
+                <option>Pastry box</option>
+                <option>Sourdough hold</option>
+                <option>Custom cake</option>
+                <option>Event order</option>
+              </select>
+            </label>
+            <label>
+              Pickup date
+              <input type="date" name="pickup-date">
+            </label>
+            <button class="button primary" type="submit">Request order</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="visit" id="visit" aria-labelledby="visit-title">
+        <div>
+          <p class="eyebrow">Find us</p>
+          <h2 id="visit-title">Warm lights, flour-dusted counters, and coffee by the door.</h2>
+        </div>
+        <address>
+          214 Maple Street<br>
+          Los Angeles, CA 90026<br>
+          <a href="tel:+13235550184">(323) 555-0184</a>
+        </address>
+        <div class="hours" aria-label="Opening hours">
+          <span>Mon-Fri: 7 AM - 4 PM</span>
+          <span>Sat-Sun: 8 AM - 3 PM</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Flour & Ember Bakery</span>
+      <a href="mailto:hello@flourandember.example">hello@flourandember.example</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
